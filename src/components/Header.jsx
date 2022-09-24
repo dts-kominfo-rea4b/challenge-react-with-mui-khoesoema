@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <h1>Call a Friend</h1>
-      <h5 class="decorated"><span>Your friendly contact app</span></h5>
+      <h5 className="decorated"><span>Your friendly contact app</span></h5>
       <br />
       <br />
     </>

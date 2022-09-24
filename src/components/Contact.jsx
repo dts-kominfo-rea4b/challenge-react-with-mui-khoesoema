@@ -9,6 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
 
 import './styles/Contact.css';
 //import contactsData from '../data/contacts.json';
@@ -24,7 +25,8 @@ const Contact = ({ data }) => {
   
   return (
       <List className="list">
-      { data.map( (item,index) => (
+      { data.map( (item,index) => {
+        return (
         <div key={index}>
           <ListItem >
           <ListItemAvatar>
@@ -39,15 +41,15 @@ const Contact = ({ data }) => {
             primary={item.name}
             secondary={ 
               <React.Fragment>
-                <div>{item.phone}</div> 
-                <div>{item.email}</div>
+                <Typography>{item.phone}</Typography> 
+                <Typography>{item.email}</Typography>
               </React.Fragment>            
             }
             />
           </ListItem>
           <Divider component="li" />
         </div>
-      ))}
+      )})}
       {/*<ListItem>
         <ListItemAvatar>
           <Avatar
