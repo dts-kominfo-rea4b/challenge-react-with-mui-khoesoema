@@ -29,7 +29,7 @@ const ContactForm = ({handleClick}) => {
     const [contactPhoto, setContactPhoto ]= useState ('');
 
     return (
-        <Card className="card-cf" variant="outlined">
+        <Card className="card-cf" variant="outlined" sx={{bgcolor:"cornsilk"}}>
             <TextField
                 fullWidth
                 required
