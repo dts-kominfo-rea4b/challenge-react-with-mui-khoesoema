@@ -25,7 +25,7 @@ const Contact = ({ data }) => {
   
   return (
       <List className="list">
-      { Object.keys(data).map( (item,index) => {
+      { Object.values(data).map( (item,index) => {
         return (
         <div key={index}>
           <ListItem >
